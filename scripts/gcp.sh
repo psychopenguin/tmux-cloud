@@ -1,6 +1,7 @@
 #!/bin/bash
 
 CURRENT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+CLOUDSDK_PYTHON=python3
 
 source $CURRENT_DIR/helpers.sh
 active_cfg=$(gcloud config configurations list --filter="is_active=true" --format="value(name)")
